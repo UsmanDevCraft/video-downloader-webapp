@@ -13,7 +13,7 @@ const Youtube = () => {
         e.preventDefault();
         try {
             setLoader(true);
-            const response = await fetch("http://localhost:5000/api/youtube", {
+            const response = await fetch("https://videos-downloader-backend-nu.vercel.app/api/youtube", {
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"

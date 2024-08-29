@@ -12,7 +12,7 @@ const Facebook = () => {
         e.preventDefault();
         try {
           setLoader(true);
-            const response = await fetch("http://localhost:5000/api/facebook", {
+            const response = await fetch("https://videos-downloader-backend-nu.vercel.app/api/facebook", {
                 method: "POST",
                 headers: {
                     "Content-Type":"application/json"
